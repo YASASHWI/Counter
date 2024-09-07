@@ -1,17 +1,23 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- This line ensures the website is responsive on mobile devices -->
         <link rel="stylesheet" href="counter.css">
+        <title>Responsive Counter</title>
     </head>
     <body>
+        <!-- Container centers the content and ensures proper spacing -->
         <div class="container">
             <h1>Row Counter</h1>
             <h2 id="count-el">0</h2>
+            <!-- Button to increment the counter -->
             <button id="increment-btn" onclick="increment()">INCREMENT</button>
+            <!-- Button to save the counter value -->
             <button id="save-btn" onclick="save()">SAVE</button>
-            <p id="save-el">Previous entries: </p>
+            <p id="save-el">Previous entries: </p> <!-- Paragraph to display previous saved values -->
         </div>
-        <script src="countercount.js">
-            
-        </script>
+        <!-- External JS file for counter logic -->
+        <script src="countercount.js"></script>
     </body>
 </html>
